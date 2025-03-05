@@ -20,32 +20,13 @@ func main() {
 		return numberList[i] > numberList[j]
 	})
 
-	count := 0
-	lastIndex := 0
-	howManyUsed := 0
-	result := 0
+	biggest := numberList[0]
+	second := numberList[1]
 
-	for {
-		if count == m {
-			break
-		}
+	L := (m % k) * k
 
-		for i, v := range numberList {
-			if lastIndex == i {
-				if howManyUsed < k {
-					result += v
-					howManyUsed += 1
-					count++
-					break
-				}
-			} else {
-				result += v
-				lastIndex = i
-				howManyUsed = 1
-				count++
-				break
-			}
-		}
-	}
+	result := biggest * L
+	result += second * (m - L)
+
 	fmt.Println(result)
 }
