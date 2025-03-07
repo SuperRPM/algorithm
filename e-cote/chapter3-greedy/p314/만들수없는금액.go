@@ -5,7 +5,9 @@ import (
 	"slices"
 )
 
+// 못푼문제
 func main() {
+
 	example := []int{
 		3, 2, 1, 1, 9,
 	}
