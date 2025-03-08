@@ -7,11 +7,11 @@ import (
 
 func main() {
 	ex := []string{
-		// "aabbaccc",
-		// "ababcdcdababcdcd",
+		"aabbaccc",
+		"ababcdcdababcdcd",
 		"abcabcdede",
-		// "abcabcabcabcdededededede",
-		// "xababcdcdababcdcd",
+		"abcabcabcabcdededededede",
+		"xababcdcdababcdcd",
 	}
 
 	for _, s := range ex {
